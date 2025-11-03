@@ -109,7 +109,7 @@ show_banner() {
 EOF
     echo -e "${RESET}"
     echo -e "    ${BRIGHT_BLUE}═══════════════════════════════════════════════════════════════════════${RESET}"
-    echo -e "    ${BRIGHT_RED}CTF EDITION${RESET} | Optimized for Maximum Speed | Creator: ${BRIGHT_BLUE}Melvin PETIT${RESET}"
+    echo -e "    ${BRIGHT_RED}CTF EDITION${RESET} | Optimized for Maximum Speed | Creator: ${BRIGHT_BLUE}Mon zgueg tous bleu${RESET}"
     echo -e "    ${BRIGHT_BLUE}═══════════════════════════════════════════════════════════════════════${RESET}"
     echo ""
     [ -n "$CTF_TARGET" ] && echo -e "    ${BRIGHT_GREEN}[◆]${RESET} Target: ${BRIGHT_BLUE}$CTF_TARGET${RESET}"
@@ -223,7 +223,7 @@ quick_recon() {
           	-H "Host: FUZZ.$CTF_TARGET" \
          	 "http://$CTF_TARGET/" \
           	> "$CTF_SCANS/subdomains_${CTF_TARGET//[.:\/]/_}.txt" 2>&1
-fi
+			fi
 
         7)
             echo -e "\n${BRIGHT_GREEN}[◆]${RESET} ALL-IN-ONE SCAN on $CTF_TARGET..."
