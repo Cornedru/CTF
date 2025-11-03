@@ -216,10 +216,15 @@ quick_recon() {
             echo -e "\n${BRIGHT_GREEN}[◆]${RESET} Subdomain enumeration..."
             
             # Sublist3r
-            if [ -d "$CTF_TOOLS/Sublist3r" ] || check_tool "sublist3r" "sudo apt-get install -y sublist3r" true; then
-                wfuzz -c -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-20000.txt -u "$CTF_TARGET" -H Host: FUZZ."$CTF_TARGET" -hc 404,530 -o "$CTF_SCANS/subdomains_${CTF_TARGET//[.:\/]/_}.txt"
-            fi
-            ;;
+			if [ -d "$CTF_TOOLS/Sublist3r" ] || check_tool "sublist3r" "sudo apt-get install -y sublist3r" true; then
+    		wfuzz -c \
+          	-z file,/usr/share/seclists/Discovery/DNS/subdomains-top1million-20000.txt \
+          	--hc 404,530 \
+          	-H "Host: FUZZ.$CTF_TARGET" \
+         	 "http://$CTF_TARGET/" \
+          	> "$CTF_SCANS/subdomains_${CTF_TARGET//[.:\/]/_}.txt" 2>&1
+fi
+
         7)
             echo -e "\n${BRIGHT_GREEN}[◆]${RESET} ALL-IN-ONE SCAN on $CTF_TARGET..."
             echo -e "${BRIGHT_YELLOW}[!]${RESET} This will take several minutes...\n"
