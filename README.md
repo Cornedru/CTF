@@ -1,12 +1,12 @@
-# 🚀 SANDEVISTAN CTF EDITION - README
+# 🚀 Cornedry CTF EDITION - README
 
 ## 📦 Contenu du Pack
 
-Vous avez téléchargé le **SANDEVISTAN CTF TOOLKIT ULTIMATE EDITION** !
+Vous avez téléchargé le **CORNEDRY CTF TOOLKIT ULTIMATE EDITION** !
 
 ### Fichiers inclus :
 
-1. **`sandevistan_ctf_enhanced.sh`** (39 KB)
+1. **`Cornedry_ctf_enhanced.sh`** (39 KB)
    - Script principal optimisé pour CTF
    - Interface interactive avec 7 modules
    - Gestion automatique des résultats
@@ -35,7 +35,7 @@ Vous avez téléchargé le **SANDEVISTAN CTF TOOLKIT ULTIMATE EDITION** !
 ```bash
 # Rendre les scripts exécutables
 chmod +x setup_ctf_environment.sh
-chmod +x sandevistan_ctf_enhanced.sh
+chmod +x Cornedry_ctf_enhanced.sh
 
 # Lancer l'installation (une seule fois)
 ./setup_ctf_environment.sh
@@ -71,18 +71,18 @@ john
 
 ## 🎯 UTILISATION PENDANT LE CTF
 
-### Lancer SANDEVISTAN
+### Lancer Cornedry
 
 ```bash
 # Méthode 1 : Script direct
-./sandevistan_ctf_enhanced.sh
+./Cornedry_ctf_enhanced.sh
 
 # Méthode 2 : Alias (après source ~/.bashrc)
-sandevistan
+Cornedry
 
 # Méthode 3 : Depuis n'importe où
 cd ~/ctf_workspace
-sandevistan
+Cornedry
 ```
 
 ### Interface Principale
@@ -122,9 +122,9 @@ Le menu principal offre **7 modules** :
 
 ### Pendant le CTF : Garde ces fichiers ouverts
 
-**Terminal 1 :** SANDEVISTAN
+**Terminal 1 :** Cornedry
 ```bash
-./sandevistan_ctf_enhanced.sh
+./Cornedry_ctf_enhanced.sh
 ```
 
 **Terminal 2 :** Cheatsheet d'urgence
@@ -255,14 +255,14 @@ source ~/.bashrc
 # Ou redémarrer ton terminal
 ```
 
-### SANDEVISTAN ne démarre pas ?
+### Cornedry ne démarre pas ?
 
 ```bash
 # Vérifier bash
 bash --version
 
 # Lancer en mode debug
-bash -x sandevistan_ctf_enhanced.sh
+bash -x Cornedry_ctf_enhanced.sh
 ```
 
 ---
@@ -369,4 +369,4 @@ Utilisez-le de manière responsable et éthique !
 |__|     |_| |__|   
 ```
 
-**SANDEVISTAN : Because speed matters in CTF! ⚡**
+**Cornedry : Because speed matters in CTF! ⚡**

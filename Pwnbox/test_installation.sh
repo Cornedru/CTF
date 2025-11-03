@@ -3,7 +3,7 @@
 # Quick test script to verify CTF environment setup
 
 echo -e "\n\033[1;34m╔════════════════════════════════════════╗\033[0m"
-echo -e "\033[1;34m║   SANDEVISTAN CTF - System Check      ║\033[0m"
+echo -e "\033[1;34m║   Cornedry CTF - System Check      ║\033[0m"
 echo -e "\033[1;34m╚════════════════════════════════════════╝\033[0m\n"
 
 check_tool() {
@@ -64,7 +64,7 @@ check_file "$HOME/ctf_workspace" "CTF Workspace" && ((passed++))
 ((total++))
 
 echo -e "\n\033[1;36m[7] Scripts\033[0m"
-check_file "$(pwd)/sandevistan_ctf_enhanced.sh" "Main Script" && ((passed++))
+check_file "$(pwd)/Cornedry_ctf_enhanced.sh" "Main Script" && ((passed++))
 ((total++))
 
 # Results

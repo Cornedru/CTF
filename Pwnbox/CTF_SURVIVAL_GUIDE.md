@@ -1,10 +1,10 @@
-# 🚀 SANDEVISTAN CTF - GUIDE DE SURVIE RAPIDE
+# 🚀 Cornedry CTF - GUIDE DE SURVIE RAPIDE
 
 ## ⚡ DÉMARRAGE RAPIDE
 
 ```bash
-chmod +x sandevistan_ctf_enhanced.sh
-./sandevistan_ctf_enhanced.sh
+chmod +x Cornedry_ctf_enhanced.sh
+./Cornedry_ctf_enhanced.sh
 ```
 
 ## 🎯 WORKFLOW OPTIMISÉ POUR CTF

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #=============================================================================
-# SANDEVISTAN CTF - Auto Setup Script
+# Cornedry CTF - Auto Setup Script
 # Installe tous les outils nécessaires pour dominer le CTF
 #=============================================================================
 
@@ -176,12 +176,12 @@ progress "Workspace created at: $CTF_WORKSPACE"
 
 # Create quick access aliases
 ALIASES_FILE="$HOME/.bash_aliases"
-if [ ! -f "$ALIASES_FILE" ] || ! grep -q "SANDEVISTAN CTF ALIASES" "$ALIASES_FILE"; then
+if [ ! -f "$ALIASES_FILE" ] || ! grep -q "Cornedry CTF ALIASES" "$ALIASES_FILE"; then
     cat >> "$ALIASES_FILE" << 'ALIASES'
 
-# SANDEVISTAN CTF ALIASES
+# Cornedry CTF ALIASES
 alias ctf='cd ~/ctf_workspace'
-alias sandevistan='~/sandevistan_ctf_enhanced.sh'
+alias Cornedry='~/Cornedry_ctf_enhanced.sh'
 alias linpeas='~/tools/PEASS-ng/linPEAS/linpeas.sh'
 alias lse='~/tools/linux-smart-enumeration/lse.sh'
 alias http-server='python3 -m http.server'
@@ -279,8 +279,8 @@ echo -e "${GREEN}✓${RESET} All tools installed successfully!\n"
 
 echo -e "${BOLD}Quick Start:${RESET}"
 echo -e "  1. Run: ${BLUE}source ~/.bashrc${RESET}"
-echo -e "  2. Launch: ${BLUE}./sandevistan_ctf_enhanced.sh${RESET}"
-echo -e "  3. Or use alias: ${BLUE}sandevistan${RESET}\n"
+echo -e "  2. Launch: ${BLUE}./Cornedry_ctf_enhanced.sh${RESET}"
+echo -e "  3. Or use alias: ${BLUE}Cornedry${RESET}\n"
 
 echo -e "${BOLD}Installed Tools:${RESET}"
 echo -e "  ${GREEN}✓${RESET} Nmap, Masscan, Gobuster, Dirb"
@@ -295,7 +295,7 @@ echo -e "  ${BLUE}$CTF_WORKSPACE${RESET}\n"
 
 echo -e "${BOLD}Quick Aliases:${RESET}"
 echo -e "  ${BLUE}ctf${RESET}         - Go to CTF workspace"
-echo -e "  ${BLUE}sandevistan${RESET} - Launch main tool"
+echo -e "  ${BLUE}Cornedry${RESET} - Launch main tool"
 echo -e "  ${BLUE}linpeas${RESET}     - Run LinPEAS"
 echo -e "  ${BLUE}lse${RESET}         - Run Linux Smart Enumeration"
 echo -e "  ${BLUE}http-server${RESET} - Start HTTP server"

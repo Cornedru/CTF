@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #=============================================================================
-# SANDEVISTAN CTF EDITION - Enhanced for Maximum Efficiency
+# Cornedry CTF EDITION - Enhanced for Maximum Efficiency
 # Optimized for Capture The Flag competitions
 #=============================================================================
 
@@ -159,7 +159,7 @@ quick_recon() {
     echo -e "${BRIGHT_YELLOW}[0]${RESET} Back"
     echo ""
     
-    read -rp "${BRIGHT_BLUE}$(whoami)@sandevistan${RESET}${BRIGHT_RED}>${RESET} " choice
+    read -rp "${BRIGHT_BLUE}$(whoami)@Cornedry${RESET}${BRIGHT_RED}>${RESET} " choice
     
     case $choice in
         1)
@@ -261,7 +261,7 @@ web_exploit() {
     echo -e "${BRIGHT_YELLOW}[0]${RESET} Back"
     echo ""
     
-    read -rp "${BRIGHT_BLUE}$(whoami)@sandevistan${RESET}${BRIGHT_RED}>${RESET} " choice
+    read -rp "${BRIGHT_BLUE}$(whoami)@Cornedry${RESET}${BRIGHT_RED}>${RESET} " choice
     
     case $choice in
         1)
@@ -350,7 +350,7 @@ reverse_shell_gen() {
     echo -e "${BRIGHT_YELLOW}[0]${RESET} Back"
     echo ""
     
-    read -rp "${BRIGHT_BLUE}$(whoami)@sandevistan${RESET}${BRIGHT_RED}>${RESET} " choice
+    read -rp "${BRIGHT_BLUE}$(whoami)@Cornedry${RESET}${BRIGHT_RED}>${RESET} " choice
     
     case $choice in
         1)
@@ -464,7 +464,7 @@ priv_esc() {
     echo -e "${BRIGHT_YELLOW}[0]${RESET} Back"
     echo ""
     
-    read -rp "${BRIGHT_BLUE}$(whoami)@sandevistan${RESET}${BRIGHT_RED}>${RESET} " choice
+    read -rp "${BRIGHT_BLUE}$(whoami)@Cornedry${RESET}${BRIGHT_RED}>${RESET} " choice
     
     case $choice in
         1)
@@ -539,7 +539,7 @@ password_crack() {
     echo -e "${BRIGHT_YELLOW}[0]${RESET} Back"
     echo ""
     
-    read -rp "${BRIGHT_BLUE}$(whoami)@sandevistan${RESET}${BRIGHT_RED}>${RESET} " choice
+    read -rp "${BRIGHT_BLUE}$(whoami)@Cornedry${RESET}${BRIGHT_RED}>${RESET} " choice
     
     case $choice in
         1)
@@ -631,7 +631,7 @@ file_server() {
     echo -e "${BRIGHT_YELLOW}[0]${RESET} Back"
     echo ""
     
-    read -rp "${BRIGHT_BLUE}$(whoami)@sandevistan${RESET}${BRIGHT_RED}>${RESET} " choice
+    read -rp "${BRIGHT_BLUE}$(whoami)@Cornedry${RESET}${BRIGHT_RED}>${RESET} " choice
     
     case $choice in
         1)
@@ -723,7 +723,7 @@ notes_manager() {
     echo -e "${BRIGHT_YELLOW}[0]${RESET} Back"
     echo ""
     
-    read -rp "${BRIGHT_BLUE}$(whoami)@sandevistan${RESET}${BRIGHT_RED}>${RESET} " choice
+    read -rp "${BRIGHT_BLUE}$(whoami)@Cornedry${RESET}${BRIGHT_RED}>${RESET} " choice
     
     case $choice in
         1)
@@ -811,7 +811,7 @@ main_menu() {
         show_banner
         echo -e "${BRIGHT_RED}"
         echo "      ╔═══════════════════════════════════════════════════════════╗"
-        echo "      ║${RESET}           ${BRIGHT_BLUE}▓▒░    SANDEVISTAN MAIN MENU    ░▒▓${BRIGHT_RED}           ║"
+        echo "      ║${RESET}           ${BRIGHT_BLUE}▓▒░    Cornedry MAIN MENU    ░▒▓${BRIGHT_RED}           ║"
         echo "      ╚═══════════════════════════════════════════════════════════╝"
         echo -e "${RESET}"
         
@@ -828,7 +828,7 @@ main_menu() {
         echo -e "        ${BRIGHT_YELLOW}[X]${RESET}  ${BRIGHT_RED}Exit${RESET}"
         echo ""
         
-        read -rp "${BRIGHT_BLUE}$(whoami)@sandevistan${RESET}${BRIGHT_RED}>${RESET} " choice
+        read -rp "${BRIGHT_BLUE}$(whoami)@Cornedry${RESET}${BRIGHT_RED}>${RESET} " choice
         
         case $choice in
             1) quick_recon ;;
@@ -841,7 +841,7 @@ main_menu() {
             s|S) set_target ;;
             l|L) set_lhost ;;
             x|X)
-                echo -e "\n${BRIGHT_RED}[◆]${RESET} Shutting down SANDEVISTAN..."
+                echo -e "\n${BRIGHT_RED}[◆]${RESET} Shutting down Cornedry..."
                 log_action "Session ended"
                 echo -e "${BRIGHT_BLUE}Good luck on your CTF!${RESET}\n"
                 exit 0
