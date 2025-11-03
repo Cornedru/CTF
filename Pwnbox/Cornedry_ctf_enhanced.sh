@@ -217,7 +217,7 @@ quick_recon() {
             
             # Sublist3r
             if [ -d "$CTF_TOOLS/Sublist3r" ] || check_tool "sublist3r" "sudo apt-get install -y sublist3r" true; then
-                subfinder -d "$CTF_TARGET" -o "$CTF_SCANS/subdomains_${CTF_TARGET//[.:\/]/_}.txt"
+                wfuzz -c -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-20000.txt -u "$CTF_TARGET" -H Host: FUZZ."$CTF_TARGET" -hc 404,530 -o "$CTF_SCANS/subdomains_${CTF_TARGET//[.:\/]/_}.txt"
             fi
             ;;
         7)
