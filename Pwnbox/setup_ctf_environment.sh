@@ -14,19 +14,24 @@ RESET="\033[0m"
 
 echo -e "${BOLD}${BLUE}"
 cat << 'EOF'
-╔═══════════════════════════════════════════════════════════════╗
-║                                                               ║
-║     ███████╗ █████╗ ███╗   ██╗██████╗ ███████╗██╗   ██╗     ║
-║     ██╔════╝██╔══██╗████╗  ██║██╔══██╗██╔════╝██║   ██║     ║
-║     ███████╗███████║██╔██╗ ██║██║  ██║█████╗  ██║   ██║     ║
-║     ╚════██║██╔══██║██║╚██╗██║██║  ██║██╔══╝  ╚██╗ ██╔╝     ║
-║     ███████║██║  ██║██║ ╚████║██████╔╝███████╗ ╚████╔╝      ║
-║     ╚══════╝╚═╝  ╚═╝╚═╝  ╚═══╝╚═════╝ ╚══════╝  ╚═══╝       ║
-║                                                               ║
-║                    AUTO SETUP SCRIPT                          ║
-║                  Preparing for CTF domination                 ║
-║                                                               ║
-╚═══════════════════════════════════════════════════════════════╝
+╔═══════════════════════════════════════════════════════════════════════════════════════════════╗
+║                                                               								║
+║     █████████                                         ██████████                       		║
+║    ███░░░░░███                                       ░░███░░░░███                      		║
+║   ███     ░░░   ██████  ████████  ████████    ██████  ░███   ░░███ ████████  █████ ████		║
+║  ░███          ███░░███░░███░░███░░███░░███  ███░░███ ░███    ░███░░███░░███░░███ ░███ 		║
+║  ░███         ░███ ░███ ░███ ░░░  ░███ ░███ ░███████  ░███    ░███ ░███ ░░░  ░███ ░███ 		║
+║  ░░███     ███░███ ░███ ░███      ░███ ░███ ░███░░░   ░███    ███  ░███      ░███ ░███ 		║
+║   ░░█████████ ░░██████  █████     ████ █████░░██████  ██████████   █████     ░░███████ 		║
+║    ░░░░░░░░░   ░░░░░░  ░░░░░     ░░░░ ░░░░░  ░░░░░░  ░░░░░░░░░░   ░░░░░       ░░░░░███ 		║
+║                                                                             ███ ░███ 			║
+║                                                                            ░░██████  			║
+║                                                                             ░░░░░░      		║     														  			   																				 
+║                                                               								║
+║                    AUTO SETUP SCRIPT                          								║
+║                  Preparing for CTF domination                 								║
+║                                                                								║
+╚═══════════════════════════════════════════════════════════════════════════════════════════════╝
 EOF
 echo -e "${RESET}"
 
@@ -140,11 +145,11 @@ if [ ! -d "$TOOLS_DIR/linux-smart-enumeration" ]; then
     chmod +x "$TOOLS_DIR/linux-smart-enumeration/lse.sh" 2>/dev/null
 fi
 
-# Sublist3r
-if [ ! -d "$TOOLS_DIR/Sublist3r" ]; then
-    info "Cloning Sublist3r..."
-    git clone --quiet --depth 1 https://github.com/aboul3la/Sublist3r.git "$TOOLS_DIR/Sublist3r" 2>/dev/null
-    pip3 install --quiet -r "$TOOLS_DIR/Sublist3r/requirements.txt" 2>/dev/null
+# Subfinder
+if [ ! -d "$TOOLS_DIR/Subfinder" ]; then
+    info "Cloning Subfinder..."
+    git clone --quiet --depth 1 https://github.com/aboul3la/Subfinder.git "$TOOLS_DIR/Subfinder" 2>/dev/null
+    pip3 install --quiet -r "$TOOLS_DIR/Subfinder/requirements.txt" 2>/dev/null
 fi
 
 # XSStrike
