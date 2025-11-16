@@ -354,8 +354,8 @@ Utilisez-le de manière responsable et éthique !
 
 ## 🙏 CRÉDITS
 
-- Script original : Melvin PETIT
-- Optimisation CTF : Claude (Anthropic)
+- Script original : Cornedru
+- Optimisation CTF : Cornedru
 - Communauté open-source pour tous les outils
 
 ---
